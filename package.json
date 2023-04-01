@@ -2,6 +2,18 @@
   "name": "react-aurora",
   "private": true,
   "version": "0.0.1",
+  "description": "Library of clean react components.",
+  "main": "index.ts",
+  "author": "“Ismael <“maelcosta96@gmail.com”>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ismaelcostarc/react-aurora"
+  },
+  "keywords": [
+    "react",
+    "storybook"
+  ],
   "scripts": {
     "prepare": "husky install",
     "dev": "vite",
