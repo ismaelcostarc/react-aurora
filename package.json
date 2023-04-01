@@ -1,7 +1,7 @@
 {
   "name": "react-aurora-ts",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Library of clean react components.",
   "main": "./dist/assets/index.js",
   "author": "“Ismael <“maelcosta96@gmail.com”>",
