@@ -5,7 +5,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { AButton } from './AButton';
 
 export default {
-  title: 'Botão',
+  title: 'Button',
   component: AButton,
   parameters: {
     docs: {
@@ -16,7 +16,7 @@ export default {
 
 export const Default: ComponentStory<typeof AButton> = () => (
   <>
-    <h2>Botão</h2>
+    <h2>Button</h2>
     <p>
       Utilize as variações do componente <strong>Button</strong> em modais, formulários, etc. Este componente possui
       diferentes estilos e variações.

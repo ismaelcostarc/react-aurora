@@ -1,0 +1,203 @@
+import { Meta } from '@storybook/addon-docs';
+import Arrow from './assets/arrow.svg';
+import Badge from './assets/badge.svg';
+import Card from './assets/card.svg';
+import Checkbox from './assets/checkbox.svg';
+import Chevron from './assets/chevron.svg';
+import Input from './assets/input.svg';
+import Tooltip from './assets/tooltip.svg';
+import Radio from './assets/radio.svg';
+
+<Meta title="Introdução" />
+
+<style>
+  {`
+    .subheading {
+      --mediumdark: '#999999';
+      font-weight: 900;
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 6px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      margin-top: 40px;
+    }
+
+    .link-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 10px;
+    }
+
+    @media (min-width: 620px) {
+      .link-list {
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media all and (-ms-high-contrast:none) {
+    .link-list {
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr;
+        -ms-grid-rows: 1fr 1fr;
+      }
+    }
+
+    .link-item {
+      display: block;
+      padding: 20px 30px 20px 15px;
+      border: 1px solid #00000010;
+      border-radius: 5px;
+      transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+      color: #333333;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .link-item:hover {
+      border-color: #1EA7FD50;
+      transform: translate3d(0, -3px, 0);
+      box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+    }
+
+    .link-item:active {
+      border-color: #1EA7FD;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .link-item strong {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .link-item img {
+      height: 40px;
+      width: 40px;
+      margin-right: 15px;
+      flex: none;
+    }
+
+    .link-item span {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .tip {
+      display: inline-block;
+      border-radius: 1em;
+      font-size: 11px;
+      line-height: 12px;
+      font-weight: 700;
+      background: #E7FDD8;
+      color: #66BF3C;
+      padding: 4px 12px;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+
+    .tip-wrapper {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  `}
+</style>
+
+# React Aurora
+
+React Aurora é uma biblioteca de componentes React em Typescript criados de forma a serem o mais simples, enxutos possíveis. Os componente foram pensados de forma a serem utilizados em qualquer contexto, de forma rápida, seja para um MVP ou aplicação em produção. Sugestões, issues e PRs são bem-vindas.
+
+<div className="subheading">Componentes</div>
+
+<div className="link-list">
+  <a className="link-item" href="https://storybook.js.org/docs/react/addons/addon-types" target="_blank">
+    <img src={Arrow} alt="Pointer" />
+    <span>
+      <strong>Button</strong>
+      Utilize as variações do componente <b>Button</b> em Modais, Formulários, etc.
+    </span>
+  </a>
+
+<a className="link-item" href="https://storybook.js.org/docs/react/addons/addon-types" target="_blank">
+  <img src={Badge} alt="Badge" />
+  <span>
+    <strong>Badge</strong>
+    <b>Badges</b> usadas para criar labels e tags em outros componentes.
+  </span>
+</a>
+
+<a className="link-item" href="https://storybook.js.org/docs/react/addons/addon-types" target="_blank">
+  <img src={Card} alt="Card" />
+  <span>
+    <strong>Card</strong>
+    <b>Cards</b> são excelentes containers para conter informações de algum tipo de dado.
+  </span>
+</a>
+
+<a className="link-item" href="https://storybook.js.org/docs/react/addons/addon-types" target="_blank">
+  <img src={Checkbox} alt="Checkbox" />
+  <span>
+    <strong>Checkbox</strong>
+    <b>Checkboxes</b> são utilizados para marcar uma opção ou várias em uma lista.
+  </span>
+</a>
+
+<a className="link-item" href="https://storybook.js.org/docs/react/addons/addon-types" target="_blank">
+  <img src={Radio} alt="Radio" />
+  <span>
+    <strong>Radio</strong>
+    Componentes do tipo <b>Radio</b> são utilizados para marcar uma única opção em uma lista.
+  </span>
+</a>
+
+<a className="link-item" href="https://storybook.js.org/docs/react/addons/addon-types" target="_blank">
+  <img src={Chevron} alt="Chevron" />
+  <span>
+    <strong>Select</strong>O componente <b>Select</b> abre um menu com diversas opções.
+  </span>
+</a>
+
+<a className="link-item" href="https://storybook.js.org/docs/react/addons/addon-types" target="_blank">
+  <img src={Input} alt="Input" />
+  <span>
+    <strong>Input</strong>
+    <b>Inputs</b> são componentes com diversas variações para receber dados inseridos pelo usuário.
+  </span>
+</a>
+
+<a className="link-item" href="https://storybook.js.org/docs/react/addons/addon-types" target="_blank">
+  <img src={Tooltip} alt="Tooltip" />
+  <span>
+    <strong>Tooltip</strong>
+    <b>Tooltips</b> são pequenos modais com dicas quando o usuário passar o mouse por cima de algum componente.
+  </span>
+</a>
+
+</div>
+
+<div className="subheading">Links</div>
+
+<div className="tip-wrapper">
+<div>
+  <span className="tip">Repositório</span>
+  <a href="https://github.com/ismaelcostarc/react-aurora">Github</a>
+</div>
+
+<div>
+  <span className="tip">Pacote</span>
+  <a href="https://www.npmjs.com/package/react-aurora-ts">npm</a>
+</div>
+</div>
+
+<div className="subheading">Autor</div>
+
+<a href="https://www.linkedin.com/in/ismaelcostarc/">Ismael Assunção Costa</a>
