@@ -1,7 +1,7 @@
 {
   "name": "react-aurora-ts",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Library of clean react components.",
   "main": "./src/main.tsx",
   "author": "“Ismael <“maelcosta96@gmail.com”>",
@@ -46,6 +46,7 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.3",
+    "standard-version": "^9.5.0",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
   },

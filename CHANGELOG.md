@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/ismaelcostarc/react-aurora/compare/v0.0.1...v0.0.2) (2023-04-01)
+
+
+### Features
+
+* add first component of the package ([77b36ee](https://github.com/ismaelcostarc/react-aurora/commit/77b36ee786511de69d35f6f4be3d510790ff9ab7))
+* add storybook ([6e5bec3](https://github.com/ismaelcostarc/react-aurora/commit/6e5bec3f133a2be9198fa00740ab74fda37e6d06))
+
 ### [0.0.1](https://github.com/ismaelcostarc/react-aurora/compare/v0.0.0...v0.0.1) (2023-04-01)
 
 
