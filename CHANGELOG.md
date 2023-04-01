@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/ismaelcostarc/react-aurora/compare/v0.0.5...v0.0.6) (2023-04-01)
+
+
+### Features
+
+* **button:** add first component ([8f23be7](https://github.com/ismaelcostarc/react-aurora/commit/8f23be71c9d6bdc0357de5342a5f3ee7fca7a792))
+* **button:** fist version of button component ([f8b5092](https://github.com/ismaelcostarc/react-aurora/commit/f8b5092140c4e95302a124aa35e83853c2b899a5))
+
 ### [0.0.5](https://github.com/ismaelcostarc/react-aurora/compare/v0.0.4...v0.0.5) (2023-04-01)
 
 ### [0.0.4](https://github.com/ismaelcostarc/react-aurora/compare/v0.0.3...v0.0.4) (2023-04-01)
