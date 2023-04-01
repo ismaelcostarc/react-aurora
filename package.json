@@ -1,6 +1,6 @@
 {
   "name": "react-aurora",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "description": "Library of clean react components.",
   "main": "index.tsx",
