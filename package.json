@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "description": "Library of clean react components.",
-  "main": "index.ts",
+  "main": "index.tsx",
   "author": "“Ismael <“maelcosta96@gmail.com”>",
   "license": "MIT",
   "repository": {
