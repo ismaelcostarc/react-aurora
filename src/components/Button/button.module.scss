@@ -1,0 +1,52 @@
+.button {
+  max-height: 3rem;
+  padding: 1rem;
+  margin: 0 auto;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    opacity: 90%;
+  }
+
+  &--default {
+    background-color: var(--blue);
+    color: white;
+  }
+
+  &--warning {
+    background-color: var(--red);
+    color: white;
+  }
+
+  &--black {
+    background-color: black;
+    color: white;
+  }
+
+  &--outlined {
+    background: white;
+    color: black;
+    outline: 1px solid var(--dark-blue);
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+
+  &:disabled {
+    background-color: var(--grey);
+
+    &:hover {
+      opacity: 100%;
+      filter: brightness(100%);
+    }
+  }
+}
+
+.pointer:hover {
+  cursor: pointer;
+}

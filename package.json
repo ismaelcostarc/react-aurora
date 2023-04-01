@@ -4,11 +4,14 @@
   "version": "0.0.5",
   "description": "Library of clean react components.",
   "main": "./src/main.tsx",
-  "author": "“Ismael <“maelcosta96@gmail.com”>",
+  "author": {
+    "name": "“Ismael",
+    "email": "maelcosta96@gmail.com"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ismaelcostarc/react-aurora"
+    "url": "git+https://github.com/ismaelcostarc/react-aurora.git"
   },
   "keywords": [
     "react",
@@ -22,8 +25,9 @@
     "preview": "vite preview",
     "commit": "pretty-quick --staged && git-cz",
     "release": "standard-version",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -p 6006 --no-manager-cache",
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=d706e229553a"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -37,6 +41,7 @@
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",
     "@storybook/addon-links": "^6.5.16",
+    "@storybook/addons": "^6.5.16",
     "@storybook/builder-vite": "^0.4.2",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
@@ -46,6 +51,7 @@
     "@typescript-eslint/parser": "^5.57.0",
     "@vitejs/plugin-react": "^3.1.0",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.17.2",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.37.0",
@@ -56,6 +62,7 @@
     "husky": "^8.0.3",
     "prettier": "^2.8.7",
     "pretty-quick": "^3.1.3",
+    "sass": "^1.60.0",
     "standard-version": "^9.5.0",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
@@ -69,5 +76,11 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ismaelcostarc/react-aurora/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/ismaelcostarc/react-aurora#readme",
+  "_id": "react-aurora-ts@0.0.5"
 }
