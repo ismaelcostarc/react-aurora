@@ -20,7 +20,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "commit": "git-cz",
+    "commit": "pretty-quick --staged && git-cz",
     "release": "standard-version",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -62,7 +62,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
