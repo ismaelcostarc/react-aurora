@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { AButton } from './AButton';
@@ -9,7 +7,7 @@ export default {
   component: AButton,
 } as ComponentMeta<typeof AButton>;
 
-const groupButtonStyle = {
+const componentContainerStyle = {
   padding: '3rem',
   display: 'flex',
   'flex-direction': 'column',
@@ -24,7 +22,7 @@ export const Button: ComponentStory<typeof AButton> = ({ type, size, disabled })
       diferentes estilos e variações.
     </p>
 
-    <div style={groupButtonStyle}>
+    <div style={componentContainerStyle}>
       <AButton size={size} disabled={disabled} type={type} key={Math.random()}>
         Botão
       </AButton>
@@ -42,7 +40,7 @@ export const Colors: ComponentStory<typeof AButton> = () => (
   <>
     <h3>Variações de cores</h3>
 
-    <div style={groupButtonStyle}>
+    <div style={componentContainerStyle}>
       <AButton>Default</AButton>
       <AButton type="warning">Warning</AButton>
       <AButton type="black">Black</AButton>
@@ -55,7 +53,7 @@ export const Disabled: ComponentStory<typeof AButton> = () => (
   <>
     <h3>Versão desabilitada</h3>
 
-    <div style={groupButtonStyle}>
+    <div style={componentContainerStyle}>
       <AButton disabled>Disabled</AButton>
     </div>
   </>
@@ -65,7 +63,7 @@ export const Size: ComponentStory<typeof AButton> = () => (
   <>
     <h3>Variações de tamanhos</h3>
 
-    <div style={groupButtonStyle}>
+    <div style={componentContainerStyle}>
       <AButton size="small">Small</AButton>
       <AButton size="medium">Medium</AButton>
       <AButton size="large">Large</AButton>
