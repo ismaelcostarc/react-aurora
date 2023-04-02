@@ -24,9 +24,16 @@ const ComponentContainer = styled.div`
   gap: 1rem;
 `;
 
-export const Button: ComponentStory<typeof AButton> = ({ type, size, disabled }) => (
+export const Button: ComponentStory<typeof AButton> = ({ type, size, disabled, width }) => (
   <ComponentContainer>
-    <AButton size={size} disabled={disabled} type={type} key={Math.random()}>
+    <AButton
+      size={size}
+      disabled={disabled}
+      type={type}
+      width={width}
+      key={Math.random()}
+      clickCb={() => alert('Botão foi clicado')}
+    >
       Botão
     </AButton>
   </ComponentContainer>
@@ -36,6 +43,7 @@ Button.args = {
   type: 'default',
   size: 'medium',
   disabled: false,
+  width: 'children',
 };
 
 export const Colors: ComponentStory<typeof AButton> = () => (
@@ -76,5 +84,18 @@ export const Size: ComponentStory<typeof AButton> = () => (
 Size.parameters = {
   docs: {
     storyDescription: 'Variações de tamanhos',
+  },
+};
+
+export const Width: ComponentStory<typeof AButton> = () => (
+  <ComponentContainer>
+    <AButton width="children">Children</AButton>
+    <AButton width="block">Block</AButton>
+  </ComponentContainer>
+);
+
+Width.parameters = {
+  docs: {
+    storyDescription: 'Variações de comprimento',
   },
 };

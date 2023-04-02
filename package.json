@@ -20,8 +20,10 @@
   "scripts": {
     "prepare": "husky install",
     "lint": "eslint . --ext .ts,.tsx",
-    "precommit": "yarn lint",
-    "commit": "pretty-quick --staged && git-cz",
+    "preprettier": "yarn lint",
+    "prettier": "pretty-quick --staged",
+    "precommit": "yarn prettier",
+    "commit": "git-cz",
     "release": "standard-version",
     "storybook": "start-storybook -p 6006 --no-manager-cache --docs",
     "build-storybook": "build-storybook --docs",
