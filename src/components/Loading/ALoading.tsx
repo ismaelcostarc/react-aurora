@@ -7,7 +7,13 @@ import styled from 'styled-components';
 type LoadingType = 'ring' | 'spinner' | 'roller' | 'ellipsis';
 
 interface ALoadingProps {
+  /**
+   * O tipo de formato do loading.
+   */
   type?: LoadingType;
+  /**
+   * A cor do loading.
+   */
   color?: Color;
 }
 

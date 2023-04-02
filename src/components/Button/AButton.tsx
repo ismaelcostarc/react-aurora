@@ -4,10 +4,25 @@ import '../../assets/css/index.css';
 import { Size } from '../../types';
 
 interface AButtonProps {
+  /**
+   * O tipo de botão.
+   */
   type?: 'default' | 'warning' | 'black' | 'outlined';
+  /**
+   * A versão desabilitada do botão.
+   */
   disabled?: boolean;
+  /**
+   * Botão com animação de carregamento.
+   */
   loading?: boolean;
+  /**
+   * Tamanho do botão.
+   */
   size?: Size;
+  /**
+   * Callback que será disparado ao clicar no botão.
+   */
   clickCb?: () => void;
   children: React.ReactNode;
 }
