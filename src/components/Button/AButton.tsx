@@ -1,12 +1,13 @@
 import React, { useMemo } from 'react';
 import styles from './AButton.module.scss';
 import '../../assets/css/index.css';
+import { Size } from '../../types';
 
 interface AButtonProps {
   type?: 'default' | 'warning' | 'black' | 'outlined';
   disabled?: boolean;
   loading?: boolean;
-  size?: 'small' | 'medium' | 'large';
+  size?: Size;
   clickCb?: () => void;
   children: React.ReactNode;
 }

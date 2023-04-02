@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ALoading.module.scss';
 import '../../assets/css/index.css';
-import { Color } from '../types';
+import { Color } from '../../types';
 import styled from 'styled-components';
 
 type LoadingType = 'ring' | 'spinner' | 'roller' | 'ellipsis';
