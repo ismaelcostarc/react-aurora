@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/ismaelcostarc/react-aurora/compare/v0.0.6...v0.1.0) (2023-04-02)
+
+
+### Features
+
+* **button:** add the width prop to button component ([ebe2dc8](https://github.com/ismaelcostarc/react-aurora/commit/ebe2dc8df038ee61ed94da9674b95c49b0a7b2e1)), closes [#7](https://github.com/ismaelcostarc/react-aurora/issues/7)
+* **button:** add variations ([8ee1f30](https://github.com/ismaelcostarc/react-aurora/commit/8ee1f302bd042fdbc0415dfdbd3f13388946e47d))
+* **loading:** add Ring loading ([8bb20dd](https://github.com/ismaelcostarc/react-aurora/commit/8bb20dd825f4661ad643090b36dbdba8ec20c402))
+* **loading:** finish loading component ([15955a9](https://github.com/ismaelcostarc/react-aurora/commit/15955a911d97a7cffbf807d43b4179557cf73623))
+
 ### [0.0.6](https://github.com/ismaelcostarc/react-aurora/compare/v0.0.5...v0.0.6) (2023-04-01)
 
 
