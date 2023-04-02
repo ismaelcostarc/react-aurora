@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import styles from './AButton.module.scss';
 import '../../assets/css/index.css';
 
-interface ButtonProps {
+interface AButtonProps {
   type?: 'default' | 'warning' | 'black' | 'outlined';
   disabled?: boolean;
   loading?: boolean;
@@ -11,7 +11,7 @@ interface ButtonProps {
   children: React.ReactNode;
 }
 
-export const AButton = (props: ButtonProps) => {
+export const AButton = (props: AButtonProps) => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation();
     props.clickCb && props.clickCb();
