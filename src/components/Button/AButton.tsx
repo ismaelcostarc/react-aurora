@@ -3,10 +3,10 @@ import styles from './AButton.module.scss';
 import '../../assets/css/index.css';
 
 interface ButtonProps {
-  type?: string;
+  type?: 'default' | 'warning' | 'black' | 'outlined';
   disabled?: boolean;
   loading?: boolean;
-  width?: string;
+  size?: 'small' | 'medium' | 'large';
   clickCb?: () => void;
   children: React.ReactNode;
 }
@@ -21,7 +21,8 @@ export const AButton = (props: ButtonProps) => {
     () => `
   ${styles.button} 
   ${styles['button--' + props.type]} 
-  ${props.disabled && styles['button--disabled']}
+  ${styles['button--' + props.size]} 
+  ${props.disabled && styles['button--disabled']} 
   `,
     [props.type],
   );
@@ -35,4 +36,5 @@ export const AButton = (props: ButtonProps) => {
 
 AButton.defaultProps = {
   type: 'default',
+  size: 'medium',
 };

@@ -14,23 +14,51 @@ export default {
   },
 } as ComponentMeta<typeof AButton>;
 
-export const Default: ComponentStory<typeof AButton> = () => (
+const groupButtonStyle = {
+  padding: '3rem',
+  display: 'flex',
+  'justify-content': 'start',
+  'flex-direction': 'column',
+  gap: '1rem',
+};
+
+export const Colors: ComponentStory<typeof AButton> = () => (
   <>
     <h2>Button</h2>
     <p>
       Utilize as variações do componente <strong>Button</strong> em modais, formulários, etc. Este componente possui
       diferentes estilos e variações.
     </p>
-    <div style={{ padding: '5rem' }}>
+
+    <h3>Variações de cores</h3>
+
+    <div style={groupButtonStyle}>
       <AButton>Default</AButton>
+      <AButton type="warning">Warning</AButton>
+      <AButton type="black">Black</AButton>
+      <AButton type="outlined">Outlined</AButton>
     </div>
   </>
 );
 
-export const Warning: ComponentStory<typeof AButton> = () => <AButton type="warning">Warning</AButton>;
+export const Disabled: ComponentStory<typeof AButton> = () => (
+  <>
+    <h3>Versão desabilitada</h3>
 
-export const Black: ComponentStory<typeof AButton> = () => <AButton type="black">Black</AButton>;
+    <div style={groupButtonStyle}>
+      <AButton disabled>Disabled</AButton>
+    </div>
+  </>
+);
 
-export const Outlined: ComponentStory<typeof AButton> = () => <AButton type="outlined">Outlined</AButton>;
+export const Size: ComponentStory<typeof AButton> = () => (
+  <>
+    <h3>Variações de tamanhos</h3>
 
-export const Disabled: ComponentStory<typeof AButton> = () => <AButton disabled>Disabled</AButton>;
+    <div style={groupButtonStyle}>
+      <AButton size="small">Small</AButton>
+      <AButton size="medium">Medium</AButton>
+      <AButton size="large">Large</AButton>
+    </div>
+  </>
+);
