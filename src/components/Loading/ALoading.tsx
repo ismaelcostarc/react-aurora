@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './ALoading.module.scss';
 import '../../assets/css/index.css';
 import { Color } from '../types';
+import styled from 'styled-components';
 
 type LoadingType = 'ring' | 'spinner' | 'roller' | 'ellipsis';
 
@@ -11,7 +12,7 @@ interface ALoadingProps {
 }
 
 export const ALoading = ({ type, color }: ALoadingProps) => {
-  const style = {
+  const styleEllipsis = {
     background: `var(--${color})`,
   };
 
@@ -19,47 +20,51 @@ export const ALoading = ({ type, color }: ALoadingProps) => {
     borderColor: `var(--${color}) transparent transparent transparent`,
   };
 
+  const DivWithAfterBackground = styled.div`
+    &:after {
+      background: var(--${color});
+    }
+  `;
+
   return type === 'ring' ? (
     <div className={styles.ring} style={styleRing}>
-      <div style={styleRing}></div>
-      <div style={styleRing}></div>
-      <div style={styleRing}></div>
-      <div style={styleRing}></div>
+      <div style={styleRing} />
+      <div style={styleRing} />
+      <div style={styleRing} />
+      <div style={styleRing} />
     </div>
   ) : type === 'spinner' ? (
-    <>
-      <div className={styles.spinner}>
-        <div style={style}></div>
-        <div style={style}></div>
-        <div style={style}></div>
-        <div style={style}></div>
-        <div style={style}></div>
-        <div style={style}></div>
-        <div style={style}></div>
-        <div style={style}></div>
-        <div style={style}></div>
-        <div style={style}></div>
-        <div style={style}></div>
-        <div style={style}></div>
-      </div>
-    </>
+    <div className={styles.spinner}>
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+    </div>
   ) : type === 'roller' ? (
-    <div className={styles.roller} style={style}>
-      <div style={style}></div>
-      <div style={style}></div>
-      <div style={style}></div>
-      <div style={style}></div>
-      <div style={style}></div>
-      <div style={style}></div>
-      <div style={style}></div>
-      <div style={style}></div>
+    <div className={styles.roller}>
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
+      <DivWithAfterBackground />
     </div>
   ) : type === 'ellipsis' ? (
-    <div className={styles.ellipsis} style={style}>
-      <div style={style}></div>
-      <div style={style}></div>
-      <div style={style}></div>
-      <div style={style}></div>
+    <div className={styles.ellipsis}>
+      <div style={styleEllipsis}></div>
+      <div style={styleEllipsis}></div>
+      <div style={styleEllipsis}></div>
+      <div style={styleEllipsis}></div>
     </div>
   ) : (
     <></>
@@ -68,5 +73,5 @@ export const ALoading = ({ type, color }: ALoadingProps) => {
 
 ALoading.defaultProps = {
   type: 'ring',
-  color: 'dark-blue',
+  color: 'black',
 };
