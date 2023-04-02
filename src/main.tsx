@@ -1,3 +1,4 @@
-import { Button } from './components/Button/AButton';
+import { AButton } from './components/Button/AButton';
+import { ALoading } from './components/Loading/ALoading';
 
-export { Button };
+export { AButton, ALoading };
