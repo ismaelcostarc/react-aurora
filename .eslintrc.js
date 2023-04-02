@@ -24,6 +24,7 @@ module.exports = {
     },
   },
   rules: {
-    // Add your own rules here to override ones from the extended configs.
+    semi: [2, 'always'],
+    'comma-dangle': [2, 'always-multiline'],
   },
 };
