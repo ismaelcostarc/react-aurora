@@ -22,4 +22,4 @@ yarn add --dev react-autora-ts
 
 ## Docs
 
-<a href="https://64287028f9334a40f2745893-nmmuvfbcup.chromatic.com/?path=/story/introdu%C3%A7%C3%A3o--page">Clique aqui para ver a documentação no Storybook.</a>
+<a href="http://ismaelcostarc.github.io/react-aurora">Clique aqui para ver a documentação no Storybook.</a>
