@@ -5,23 +5,23 @@ import { Size } from '../../types';
 
 interface AButtonProps {
   /**
-   * O tipo de botão.
+   * Button type.
    */
   type?: 'default' | 'warning' | 'black' | 'outlined';
   /**
-   * A versão desabilitada do botão.
+   * The disabled version of the button.
    */
   disabled?: boolean;
   /**
-   * Tamanho do botão.
+   * Button Size.
    */
   size?: Size;
   /**
-   * Comprimento do botão, se ele será do tamanho do conteúdo filho, ou irá ocupar o block de linha inteiro.
+   * Length of the button, whether it will be the size of the child content, or will it occupy the entire line block.
    */
   width?: 'children' | 'block';
   /**
-   * Callback que será disparado ao clicar no botão.
+   * Callback function that will be triggered when clicking on the button.
    */
   clickCb?: () => void;
   children: React.ReactNode;

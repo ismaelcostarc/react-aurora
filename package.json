@@ -1,7 +1,7 @@
 {
   "name": "react-aurora-ts",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Library of clean react components.",
   "main": "./src/main.tsx",
   "author": {
@@ -54,7 +54,6 @@
     "@typescript-eslint/parser": "^5.57.0",
     "@vitejs/plugin-react": "^3.1.0",
     "babel-loader": "^8.3.0",
-    "chromatic": "^6.17.2",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.37.0",
@@ -62,6 +61,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
     "prettier": "^2.8.7",
     "pretty-quick": "^3.1.3",
@@ -85,6 +85,6 @@
     "url": "https://github.com/ismaelcostarc/react-aurora/issues"
   },
   "readme": "ERROR: No README data found!",
-  "homepage": "https://64287028f9334a40f2745893-nmmuvfbcup.chromatic.com/?path=/story/introdu%C3%A7%C3%A3o--page",
+  "homepage": "https://64287028f9334a40f2745893-soodjvpzux.chromatic.com/",
   "_id": "react-aurora-ts@0.0.5"
 }

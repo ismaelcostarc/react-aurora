@@ -11,7 +11,7 @@ export default {
     docs: {
       description: {
         component:
-          'Utilize as variações do componente <strong>Button</strong> em modais, formulários, etc. Este componente possui diferentes estilos e variações.',
+          'Use as variations of the <strong>Button</strong> component in modals, forms, etc. This component has different styles and variations.',
       },
     },
   },
