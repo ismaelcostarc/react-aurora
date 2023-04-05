@@ -9,8 +9,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component:
-          'Utilize as variações do componente Loading para mostrar carregamento de dados em janelas, botões, etc.',
+        component: 'Use variations of the Loading component to show loading data in windows, buttons, etc.',
       },
     },
   },
@@ -95,9 +94,3 @@ export const Colors: ComponentStory<typeof ALoading> = () => (
     <ALoading color="white" />
   </ComponentContainer>
 );
-
-Colors.parameters = {
-  docs: {
-    storyDescription: 'Variações de cores',
-  },
-};

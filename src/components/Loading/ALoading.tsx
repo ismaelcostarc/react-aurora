@@ -8,12 +8,9 @@ type LoadingType = 'ring' | 'spinner' | 'roller' | 'ellipsis';
 
 interface ALoadingProps {
   /**
-   * O tipo de formato do loading.
+   * The type of Loading format.
    */
   type?: LoadingType;
-  /**
-   * A cor do loading.
-   */
   color?: Color;
 }
 
